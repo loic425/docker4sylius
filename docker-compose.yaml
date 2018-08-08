@@ -15,6 +15,7 @@ services:
     networks:
       - sylius
     working_dir: /var/www/html
+    user: ${CURRENT_UID}
   
   nginx:
     image: nginx:latest
